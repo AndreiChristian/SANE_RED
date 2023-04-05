@@ -202,6 +202,10 @@ h1 span::before {
   cursor: pointer;
   margin: 18rem 12rem;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 li {
