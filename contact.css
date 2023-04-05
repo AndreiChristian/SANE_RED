@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  /* font-family: 'PT Sans Caption', sans-serif; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  background: #181818;
+}
+
+/****************/
+/*NAVIGATION */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  inset: 0 0 0 70%;
+  /* flex-direction: column; */
+  /* padding: min(30vh, 10rem) 4rem; */
+  padding: 2rem;
+  gap: 3rem;
+  /* background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(2rem); */
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-inline-end: 0.75rem;
+  color: #fff;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/****************/
+/*CONTACT */
+
+.mail {
+  font-size: 3.2rem;
+  font-weight: 100;
+  /* margin: 1.5rem 20rem; */
+
+  color: #fff;
+  margin: 20rem 15rem;
+  margin-bottom: 3rem;
+
+  -webkit-text-stroke: 1px #e4440e;
+  color: transparent;
+}
+
+.mail::before,
+.mail::after {
+  content: "";
+}
+
+.mail::before {
+  background: #fff;
+  animation: typewriter 1s ease forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+.span {
+  font-size: 4rem;
+  font-weight: 150;
+  color: #fff;
+  -webkit-text-stroke: 1px #e4440e;
+  margin: 2rem 20rem;
+  /* border-right: 0.2rem solid;
+
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(21), cursor 0.4s step-end infinite alternate; */
+}
+/* 
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+} */
+
+img {
+  width: 4rem;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin: 0.1rem 0.1rem;
+}
+
+.dribble-logo {
+  width: 4rem;
+}
+
+.linkedin-logo {
+  width: 4rem;
+  margin-left: 5rem;
+}
+
+.git-logo {
+  width: 54rem;
+}
+
+.big-container {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 65rem;
+}
+
+.let {
+  font-size: 3.2rem;
+  font-weight: 100;
+
+  color: #fff;
+  margin-left: 60rem;
+  margin-top: 10rem;
+  margin-bottom: 0;
+
+  -webkit-text-stroke: 1px #e4440e;
+  color: transparent;
+}

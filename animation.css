@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  /* font-family: 'PT Sans Caption', sans-serif; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  line-height: 1.7;
+  position: relative;
+  background: #181818;
+  height: 100vh;
+}
+
+/****************/
+/*NAVIGATION */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  inset: 0 0 0 70%;
+  /* flex-direction: column; */
+  /* padding: min(30vh, 10rem) 4rem; */
+  padding: 2rem;
+  gap: 3rem;
+  /* background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(2rem); */
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-inline-end: 0.75rem;
+  color: #fff;
+}
+
+/****************/
+/* ANIMATION */
+
+.container {
+  /* width: 32rem;
+  height: 64rem; */
+  width: 100rem;
+  height: 60rem;
+  background: linear-gradient(to right bottom, #181818, #e4440e);
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  box-shadow: 0rem 5.6rem 7.2rem -3rem, rgba(50, 55, 65, 0.66);
+  overflow: hidden;
+}
+
+.container .card {
+  /* width: 16rem;
+  height: 22rem; */
+  width: 32rem;
+  height: 44rem;
+  position: absolute;
+  margin-top: 6rem;
+  box-shadow: 0rem 0.5rem 1rem rgba(7, 7, 7, 0.226);
+  background-position: center;
+  background-size: cover;
+  /* overflow: hidden; */
+  border-radius: 1rem;
+}
+
+.container .card-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(34, 34, 34, 0.048),
+      rgba(34, 34, 34, 0.596)
+    ),
+    url("img/massage.jpg");
+  left: 12rem;
+  cursor: pointer;
+}
+
+.container .card-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(34, 34, 34, 0.048),
+      rgba(34, 34, 34, 0.596)
+    ),
+    url("img/skincare.jpg");
+  right: 12rem;
+  cursor: pointer;
+}
+
+.container .card p {
+  position: absolute;
+  color: #fff;
+  bottom: -50rem;
+}
+
+.container .card button {
+  position: absolute;
+  bottom: -50rem;
+  padding: 1rem;
+  color: #fff;
+  background: transparent;
+  border: 0.2rem solid #e4440e;
+  border-radius: 99em;
+  left: 2.4rem;
+  margin: -2rem 2rem;
+  outline: none;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  /* margin: 1.5rem 20rem; */
+
+  color: #fff;
+  margin: 5rem 20rem;
+  -webkit-text-stroke: 3px #e4440e;
+  color: transparent;
+}
+
+.container .card h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 1.5rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.container .card .left {
+  position: absolute;
+  top: -20rem;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+  cursor: pointer;
+}

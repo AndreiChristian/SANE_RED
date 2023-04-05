@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  /* font-family: 'PT Sans Caption', sans-serif; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  background: #181818;
+  /* background: linear-gradient(315deg, #000000, #015668); */
+}
+
+/****************/
+/*NAVIGATION */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  inset: 0 0 0 70%;
+  /* flex-direction: column; */
+  /* padding: min(30vh, 10rem) 4rem; */
+  padding: 2rem;
+  gap: 3rem;
+  /* background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(2rem); */
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-inline-end: 0.75rem;
+  color: #fff;
+}
+
+/* .img-logo {
+  width: 7rem;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.container-logo {
+  padding: 0;
+  margin: 0;
+} */
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .mobile-nav {
+  position: absolute;
+  width: 1rem;
+  aspect-ratio: 1;
+  background: #b52d00;
+} */
+
+/****************/
+/*MAIN CIRCLE */
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+  margin-right: 20rem;
+  margin-left: 50rem;
+
+  position: relative;
+  width: 55rem;
+  height: 55rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.box::before {
+  content: " ";
+  position: absolute;
+  inset: -1rem 14rem;
+  background: linear-gradient(315deg, #b52d00, #e4440e);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+
+.box:hover::before {
+  inset: -2rem 0rem;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box::after {
+  content: " ";
+  position: absolute;
+  inset: 0.6rem;
+  background: #181818;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  inset: 3rem;
+  border: 0.6rem solid #e4440e;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.box:hover .img {
+  opacity: 0;
+}
+
+.title {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  /* text-transform: uppercase; */
+}
+
+.my-name {
+  -webkit-text-stroke: 2px #e4440e;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sub {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.explore {
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 2em;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  text-decoration: none;
+  margin-top: 6rem;
+  text-decoration: none;
+}
+
+.explore::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #e4440e / 0.1;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+
+.explore:hover::after,
+.explore:focus::after {
+  background: #e4440e;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/****************/
+/* ANIMATION 1  */
+
+/* .animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 10vw;
+  display: flex;
+  line-height: 0.75;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 3px #e4440e;
+  color: transparent;
+  border: 1px solid #e4440e;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+h1 span {
+  display: block;
+  position: relative;
+}
+
+h1 span::before {
+  content: attr(data-char);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  transform: translateY(-110%);
+} */
