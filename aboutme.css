@@ -1,46 +1,4 @@
 
-
-/****************/
-/*NAVIGATION */
-
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.primary-navigation {
-  list-style: none;
-  /* padding: 0; */
-  margin: 0 3rem;
-
-  position: fixed;
-  inset: 0 0 0 70%;
-
-  /* flex-direction: column; */
-  /* padding: min(30vh, 10rem) 4rem; */
-  padding: 2rem;
-  gap: 3rem;
-  /* background: hsl(0 0% 100% / 0.1);
-  backdrop-filter: blur(2rem); */
-  z-index: 2;
-  mix-blend-mode: difference;
-  width: 100%;
-  padding: 1em;
-}
-
-.primary-navigation a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-inline-end: 0.75rem;
-  color: #fff;
-}
-
-.primary-header {
-  align-items: center;
-  justify-content: space-between;
-}
-
 /****************/
 /* ANIMATION 1  */
 
