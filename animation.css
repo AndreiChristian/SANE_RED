@@ -1,13 +1,9 @@
-
-
 /****************/
 /* ANIMATION */
 
 .container {
-  /* width: 32rem;
-  height: 64rem; */
   width: 90%;
-  height: 80%;
+  height: 60%;
   background: linear-gradient(to right bottom, #181818, #e4440e);
 
   position: absolute;
@@ -15,24 +11,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* margin: 0 auto; */
   border-radius: 2rem;
   box-shadow: 0rem 5.6rem 7.2rem -3rem, rgba(50, 55, 65, 0.66);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .container .card {
-  /* width: 16rem;
-  height: 22rem; */
-  width: 32rem;
-  height: 44rem;
-  position: absolute;
-  margin-top: 6rem;
+  width: 40%;
+  height: 90%;
+  /* position: absolute; */
+  margin: auto 0;
+  padding: 3vh 2vw;
+  box-sizing: border-box;
   box-shadow: 0rem 0.5rem 1rem rgba(7, 7, 7, 0.226);
   background-position: center;
   background-size: cover;
-  /* overflow: hidden; */
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .container .card-1 {
@@ -42,7 +43,7 @@
       rgba(34, 34, 34, 0.596)
     ),
     url("img/massage.jpg");
-  left: 12rem;
+  /* left: 12rem; */
   cursor: pointer;
 }
 
@@ -53,52 +54,43 @@
       rgba(34, 34, 34, 0.596)
     ),
     url("img/skincare.jpg");
-  right: 12rem;
+  /* right: 12rem; */
   cursor: pointer;
 }
 
 .container .card p {
-  position: absolute;
+  /* position: absolute; */
   color: #fff;
-  bottom: -50rem;
 }
 
 .container .card button {
-  position: absolute;
-  bottom: -50rem;
+  /* position: absolute; */
   padding: 1rem;
   color: #fff;
   background: transparent;
   border: 0.2rem solid #e4440e;
   border-radius: 99em;
-  left: 2.4rem;
-  margin: -2rem 2rem;
   outline: none;
 }
 
 .title {
   font-size: 3.2rem;
   font-weight: 500;
-  /* margin: 1.5rem 20rem; */
-
   color: #fff;
-  margin: 5rem 20rem;
   -webkit-text-stroke: 3px #e4440e;
   color: transparent;
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .container .card h3 {
-  position: absolute;
   bottom: 0;
-  margin: 1.5rem 2rem;
   font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
 }
 
-.container .card .left {
-  position: absolute;
-  top: -20rem;
+.container .card .left, .container .card .right {
   color: #fff;
   width: 2rem;
   height: 2rem;
@@ -106,41 +98,16 @@
   cursor: pointer;
 }
 
-/* @media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
+    flex-direction: column;
+    height: 60%;
+    width: 90%;
   }
 
   .container .card {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    border-radius: 0;
-  }
+    width: 90%;
+    height: 40%;
 
-  .container .card-1 {
-    left: 0;
   }
-
-  .container .card-2 {
-    right: 0;
-  }
-
-  .container .card p {
-    bottom: -100rem;
-  }
-
-  .container .card button {
-    bottom: -100rem;
-  }
-
-  .title {
-    margin: 5rem 0;
-  }
-
-  .container .card h3 {
-    margin: 1.5rem 1rem;
-  }
-} */
+}
