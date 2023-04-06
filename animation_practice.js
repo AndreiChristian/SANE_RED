@@ -41,6 +41,7 @@ leftTimeline.from(
     ease: Power1.easeInOut,
     duration: 0.3,
     opacity: 0,
+    display: "none",
     y: 100,
   },
   "<"
@@ -52,6 +53,7 @@ leftTimeline.from(
     ease: Power1.easeInOut,
     duration: 0.3,
     opacity: 0,
+    display: "none",
     y: 100,
   },
   "<"
@@ -104,6 +106,7 @@ rightTimeline.from(
     ease: Power1.easeInOut,
     duration: 0.3,
     opacity: 0,
+    display: "none",
     y: 100,
   },
   "<"
@@ -115,6 +118,7 @@ rightTimeline.from(
     ease: Power1.easeInOut,
     duration: 0.3,
     opacity: 0,
+    display: "none",
     y: 100,
   },
   "<"
