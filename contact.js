@@ -1,8 +1,6 @@
-gsap.to("p", {
-  text: "typewriter effect with GSAP 3",
+gsap.to("#gsap-text", {
+  text: "saneladovlete@gmail.com",
   ease: "power1.in",
-  duration: 2,
-  repeat: 10,
-  yoyo: true,
-  repeatDelay: 0.4,
+  delay: 0.5,
+  duration: 4,
 });

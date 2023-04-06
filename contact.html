@@ -21,6 +21,15 @@
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="./shared/shared.css" />
     <link rel="stylesheet" href="./shared/navigation.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+    <script defer src="./contact.js"></script>
+
     <title>Sane's Page</title>
   </head>
   <body>
@@ -56,7 +65,7 @@
       <!-- paragraph containing the mail -->
 
       <div class="container-mail">
-        <span class="span">saneladovlete@gmail.com</span>
+        <span id="gsap-text" class="span"></span>
       </div>
 
       <p class="let">Let's get in touch!</p>
@@ -164,7 +173,8 @@
 
         <!-- GITHUB LOGO -->
 
-        <svg class="git-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g
+        <svg class="git-logo" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg"><g
             id="SVGRepo_bgCarrier" stroke-width="0"></g><g
             id="SVGRepo_tracerCarrier" stroke-linecap="round"
             stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path
@@ -211,12 +221,6 @@
 
     </main>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
-    <script defer src="contact.js"></script>
+
   </body>
 </html>
